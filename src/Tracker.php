@@ -137,6 +137,30 @@ class Tracker
         return clone $this;
     }
 
+    public function getLatest_message()
+    {
+        return $this->latest_message;
+    }
+      public function getLatest_action_name()
+    {
+        return $this->latest_action_name;
+    }
+      public function getSlots()
+    {
+        return $this->slots;
+    }
+       public function getActive_form()
+    {
+        return $this->active_form;
+    }
+    public function __get( $name ) {
+        if( method_exists( $this , $method = ( 'get' . ucfirst( $name  ) ) ) )
+            return $this->$method();
+        else
+            throw new Exception( 'Can\'t get property ' . $name );
+    }
+
+
     static public function get_or_d(&$value, $default = null)
     {
     return isset($value) ? $value : $default;
