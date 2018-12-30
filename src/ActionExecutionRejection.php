@@ -7,7 +7,7 @@ class ActionExecutionRejection extends Exception
 
     protected $message;
 
-    protected function __construct($action_name, $message=null)
+    public function __construct($action_name, $message=null)
     {
         $this->action_name = $action_name;
         $this->message = $message ? $message : "Custom action '$action_name' rejected execution of"

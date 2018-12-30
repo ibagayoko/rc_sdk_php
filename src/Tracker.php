@@ -40,7 +40,7 @@ class Tracker
 
     protected $latest_action_name;
 
-    protected function __construct($sender_id, $slots, $latest_message, $events, $paused, $followup_action, $active_form, $latest_action_name)
+    public function __construct($sender_id, $slots, $latest_message, $events, $paused, $followup_action, $active_form, $latest_action_name)
     {
         $this->sender_id = $sender_id;
         $this->slots = $slots;
@@ -64,14 +64,14 @@ class Tracker
     static public function from_dict($state)
     {
         
-        return new Tracker($state["sender_id"],
-                       Tracker::get_or_d($state["slots"], (object)[]),
-                       Tracker::get_or_d($state["latest_message"], (object)[]),
-                       $state["events"],
-                       $state["paused"],
-                       $state["followup_action"],
-                       Tracker::get_or_d($state["active_form"], (object)[]),
-                       $state["latest_action_name"]);
+        return new Tracker($state->sender_id,
+                       Tracker::get_or_d($state->slots, (object)[]),
+                       Tracker::get_or_d($state->latest_message, (object)[]),
+                       $state->events,
+                       $state->paused,
+                       $state->followup_action,
+                       Tracker::get_or_d($state->active_form, (object)[]),
+                       $state->latest_action_name);
     }
 
     public function current_state()
