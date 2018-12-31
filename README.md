@@ -3,6 +3,13 @@
 
 PHP SDK for the development of custom actions for Rasa Core.
 
+## Compatibility
+
+| SDK version   | compatible Rasa Core version           |
+|---------------|----------------------------------------|
+| `0.1.x`       | `>=0.12.x`                             |
+
+
 ## Installation
 
 To install the SDK run
@@ -12,6 +19,8 @@ composer require ibagayoko/rc_sdk_php
 ```
 
 ## Usage
+Can find detailed instructions about [Custom Actions](https://rasa.com/docs/core/customactions) in the Rasa Core Documentation.
+[Custom Actions](https://rasa.com/docs/core/customactions).
 In your acion endpoint config file put:
 ```yml
 action_endpoint:
@@ -89,3 +98,7 @@ Route::post('/webhook', function () use($endpoint)
 	 return $endp->webhook();
 });
 ```
+
+
+## License
+Licensed under the Apache License, Version 2.0. [Copy of the license](LICENSE).

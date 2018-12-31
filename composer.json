@@ -1,15 +1,16 @@
 {
     "name": "ibagayoko/rc_sdk_php",
     "description": "A PHP version of th SDK for the development of custom actions for Rasa Core.",
-    "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
+    "keywords": ["Rasa Core SDK"],
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/ibagayoko/rc_sdk_php",
     "authors": [
         {
             "name": "Ismail Bagayoko",
             "email": "bagayoko.ismail@gmail.com"
         }
     ],
-    "type": "project",
+    "type": "library",
     "require": {
 		"php": ">=7.1"
     },
