@@ -1,6 +1,6 @@
 <?php
 
-namespace IBagayoko;
+namespace IBagayoko\RasaCoreSdk;
 
 
 class Tracker  

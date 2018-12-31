@@ -1,5 +1,5 @@
 <?php 
-namespace IBagayoko;
+namespace IBagayoko\RasaCoreSdk;
 
 abstract class Action{
 

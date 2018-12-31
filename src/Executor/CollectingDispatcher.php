@@ -1,6 +1,6 @@
 <?php
 
-namespace IBagayoko\Executor;
+namespace IBagayoko\RasaCoreSdk\Executor;
 
 /**
  * CollectingDispatcher.

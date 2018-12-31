@@ -1,8 +1,8 @@
 <?php 
 
-namespace IBagayoko;
+namespace IBagayoko\RasaCoreSdk;
 
-use IBagayoko\Executor\ActionExecutor;
+use IBagayoko\RasaCoreSdk\Executor\ActionExecutor;
 
 class Endpoint 
 {

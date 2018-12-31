@@ -1,9 +1,9 @@
 <?php
 
-namespace IBagayoko\Executor;
+namespace IBagayoko\RasaCoreSdk\Executor;
 
-use IBagayoko\Action;
-use IBagayoko\Tracker;
+use IBagayoko\RasaCoreSdk\Action;
+use IBagayoko\RasaCoreSdk\Tracker;
 
 class ActionExecutor 
 {
